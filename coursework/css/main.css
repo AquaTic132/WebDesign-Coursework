@@ -61,7 +61,7 @@ nav li a{
     text-decoration: none;
 }
 
-nav li :hover{
+nav li:hover{
     background-color: #2E8BC0;
 }
 
@@ -79,11 +79,11 @@ table td, table th{
     border-radius: 2px, solid, #f0f0f0;
 }
 
-table tr :nth-child(even){
+table tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
-table tr :hover{
+table tr:hover{
     background-color: #280137;
 }
 
