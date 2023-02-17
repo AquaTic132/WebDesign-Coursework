@@ -69,3 +69,25 @@ nav li :hover{
 .active{
     background-color: #145DA0;
 }
+
+table{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border-radius: 2px, solid, #f0f0f0;
+}
+
+table tr :nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr :hover{
+    background-color: #280137;
+}
+
+table th{
+    background-color: #2E8BC0;
+    color: #ffffff;
+}
