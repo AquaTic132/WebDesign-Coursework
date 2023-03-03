@@ -15,15 +15,6 @@ header{
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px
-    
-}
-#logo{
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
-
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -100,4 +91,3 @@ table th{
     background-color: #2E8BC0;
     color: #ffffff;
 }
-
