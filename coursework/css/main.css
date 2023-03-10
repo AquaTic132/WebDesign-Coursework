@@ -15,7 +15,9 @@ header{
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px    
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 0px;
 }
 
 #logo{
@@ -23,6 +25,7 @@ header{
     width: 50px;
     float: left;
     margin-right: 10px;
+    padding-bottom: 0px;
 }
 
 #indexH1{
@@ -30,8 +33,12 @@ header{
 }
 
 h1,h2,h3,h4,h5,h6,p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: #000000
+}
+
+#title{
+    padding-top: 10px;
 }
 
 h1{
@@ -49,20 +56,23 @@ p{
 main{
     background-color: #ffffff;
     border-radius: 10px;
+
 }
 
 aside{
     background-color: #ffffff;
     border-radius: 10px;
+
 }
 
 footer{
     background-color: #2E8BC0;
     border-radius: 10px;
+
 }
 
 nav ul{
-    margin: 0px;
+    margin-left: 0px;
     padding: 0px;
     overflow: hidden;
 }
@@ -73,6 +83,7 @@ nav li{
     list-style-type: none;
     float: left;
     width: 10%;
+    text-align: center;
     padding: 16px;
 }
 
@@ -112,4 +123,12 @@ table th{
     background-color: #2E8BC0;
     color: #ffffff;
 }
+#home-carousel{
 
+   background-color: #280137;
+   margin: 0px;
+}
+/*#home-carousel .carousel-item{
+    
+}
+*/
