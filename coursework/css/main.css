@@ -128,6 +128,17 @@ table th{
    background-color: #280137;
    margin: 0px;
 }
+
+.gallery-img{
+    width: 500px;
+}
+#img-gallery{
+    padding-top: 10px;
+}
+#img-gallery .row{
+    margin-bottom: 10px;
+}
+
 /*#home-carousel .carousel-item{
     
 }

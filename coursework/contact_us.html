@@ -45,6 +45,7 @@
                         <input type="radio" name="membership" value="No"/>
                         <label for="membership">No</label>
                         <br/>
+                        <button type="button" id="button" onclick="send_form()">Submit </button>
 
                     </fieldset>
                 </form>
@@ -60,6 +61,11 @@
         <p>Copyright Keysan askari</p>
     </footer>
 
+    <script>
+        function send_form(){
+            onclick=document.getElementById("button").innerHTML="Form has been sent successfully!"
+        }
+    </script>
 
 
 
