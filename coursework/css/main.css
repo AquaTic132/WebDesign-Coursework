@@ -16,8 +16,7 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
-    margin: 0px;
-    margin-bottom: 0px;
+    
 }
 
 #logo{
@@ -46,6 +45,8 @@ h1{
 }
 
 h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
     font-size: large;
 }
 
@@ -55,6 +56,7 @@ p{
 
 main{
     background-color: #ffffff;
+    padding-top: 5px;
     border-radius: 10px;
 
 }
@@ -130,13 +132,21 @@ table th{
 }
 
 .gallery-img{
-    width: 500px;
+    width: 100%;
+    
 }
 #img-gallery{
     padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 #img-gallery .row{
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+#login{
+    display: inline;
+    
 }
 
 /*#home-carousel .carousel-item{
