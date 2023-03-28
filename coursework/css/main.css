@@ -54,6 +54,11 @@ p{
     font-size: medium;
 }
 
+h6{
+    font-size: small;
+    color:#ffffff;
+}
+
 main{
     background-color: #ffffff;
     padding-top: 5px;
@@ -138,18 +143,40 @@ table th{
 #img-gallery{
     padding-top: 10px;
     padding-bottom: 10px;
+    background-image: url(../images/background2.jpg);
 }
 
 #img-gallery .row{
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 #login{
     display: inline;
     
 }
 
-/*#home-carousel .carousel-item{
-    
+.champion {
+    background-color:#145DA0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
 }
-*/
+
+.champion img {
+    max-width: 100%;
+    height: auto;
+}
+
+#championsBackground{
+    background-image: url(../images/background2.jpg);
+    background-size:cover;
+}
+#home-carousel .carousel-item{
+    width: 2000px;
+    height: 1100px;
+}

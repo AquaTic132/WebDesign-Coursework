@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
 
-    <body>
+    <body id="championsBackground">
         <header>
             <img id ="logo" src ="images/leagueIcon1.jpg" alt="Logo"/>
             <h1 id="title">
@@ -29,15 +29,38 @@
         </nav>
 
 
+        <div>
+                <div id="champion-list"></div>
+            </div>
 
+            <script>
+                // Fetch the champions from the Riot Games API
+                fetch("https://ddragon.leagueoflegends.com/cdn/11.6.1/data/en_US/champion.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        // Loop through the champion data and create champion divs
+                        Object.values(data.data).forEach(champion => {
+                            const champions = document.createElement("div");
+                            champions.classList.add("champion");
 
+                            const image = document.createElement("img");
+                            image.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
+                            image.alt = champion.name;
+                            champions.appendChild(image);
 
+                            const name = document.createElement("h3");
+                            name.textContent = champion.name;
+                            champions.appendChild(name);
 
+                            const title = document.createElement("h6");
+                            title.textContent = champion.title;
+                            champions.appendChild(title);
 
-
-
-
-
+                            document.getElementById("champion-list").appendChild(champions);
+                        });
+                    })
+                    .catch(error => console.error(error));
+            </script>
 
 
 
