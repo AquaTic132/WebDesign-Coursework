@@ -8,6 +8,8 @@
     </head>
 
     <body id="championsBackground">
+
+        <!-- Logo image and webpage title -->
         <header>
             <img id ="logo" src ="images/leagueIcon1.jpg" alt="Logo"/>
             <h1 id="title">
@@ -15,6 +17,7 @@
             </h1>
         </header>
 
+        <!-- Navigation bar -->
         <nav>
             <ul>
                 <li class = "active"><a href= 'index.html'> Home </a></li>
@@ -23,8 +26,8 @@
                 <li class = "active"><a href= 'event_calendar.html'> Events </a></li>
                 <li class = "active"><a href= 'champion_catalouge.html'> Champions </a></li>
                 <li class = "active"><a href= 'role_information.html'> Roles </a></li>
-                <li class = "active"><a href= 'placeholder.html'> placeholder </a></li>
-                <li class = "active"><a href= 'contact_us.html'> Contacs </a></li>
+                <li class = "active"><a href= 'socials.html'> Socials </a></li>
+                <li class = "active"><a href= 'contact_us.html'> Contacts </a></li>
             </ul>
         </nav>
 
@@ -34,27 +37,31 @@
             </div>
 
             <script>
-                // Fetch the champions from the Riot Games API
+                // Fetchs the champions from the Riot games API
                 fetch("https://ddragon.leagueoflegends.com/cdn/11.6.1/data/en_US/champion.json")
                     .then(response => response.json())
                     .then(data => {
-                        // Loop through the champion data and create champion divs
+                        // Loops through the champions data and creates champion divs
                         Object.values(data.data).forEach(champion => {
                             const champions = document.createElement("div");
                             champions.classList.add("champion");
 
+                            // Gets the image from the Riot games API, if image cannot be found it will write the champions name
                             const image = document.createElement("img");
                             image.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
                             image.alt = champion.name;
                             champions.appendChild(image);
 
+                            // creates h3 element with the name of the champion
                             const name = document.createElement("h3");
                             name.textContent = champion.name;
                             champions.appendChild(name);
 
+                            // creates h6 element with the title of the champion
                             const title = document.createElement("h6");
                             title.textContent = champion.title;
                             champions.appendChild(title);
+
 
                             document.getElementById("champion-list").appendChild(champions);
                         });
@@ -63,13 +70,17 @@
             </script>
 
 
+        <footer>
+            <p>Copyright Keysan askari</p>
+        </footer>
+
 
 
     </body>
 
 
 
-
+        
 
 
 

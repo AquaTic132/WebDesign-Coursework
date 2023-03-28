@@ -123,13 +123,29 @@ table tr:nth-child(even){
 }
 
 table tr:hover{
-    background-color: #280137;
+    background-color:#2E8BC0
 }
 
 table th{
-    background-color: #2E8BC0;
+    background-color:#145DA0;
     color: #ffffff;
 }
+
+#row0{
+    text-align: center;
+    font-size: 30px;
+}
+
+#leftRow{
+    font-size: 20px;
+    text-align: center;
+}
+
+#tabledata{
+    font-size: 20px;
+}
+
+
 #home-carousel{
 
    background-color: #280137;
@@ -143,13 +159,13 @@ table th{
 #img-gallery{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-image: url(../images/background2.jpg);
+
 }
 
 #img-gallery .row{
     margin-top: 10px;
     margin-bottom: 10px;
-    
+
 }
 #login{
     display: inline;
@@ -176,7 +192,35 @@ table th{
     background-image: url(../images/background2.jpg);
     background-size:cover;
 }
+#championsBackground1{
+    background-image: url(../images/background4.jpg);
+    background-size: 3500px;
+}
+#championsBackground2{
+    background-image: url(../images/background4.jpg);
+    background-size: 9500px;
+}
+
 #home-carousel .carousel-item{
-    width: 2000px;
+    width: 1900px;
     height: 1100px;
+}
+
+#roleInfo{
+    color: #000000;
+    font-size: 26px;
+}
+
+#roleInfo1{
+    color: #000000;
+    font-size: 25px;
+}
+
+#roleImg{
+    color: #000000;
+}
+
+#videoclip{
+    width: 720px;
+    height:480px;
 }
