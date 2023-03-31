@@ -112,16 +112,31 @@ nav li:hover{
 table{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+
+}
+#tablesize{
+    width: 1500px;
+}
+#backgroundtable{
+    background-image: url(../images/background2.jpg);
+    background-size:auto;
 }
 
 table td, table th{
     border-radius: 2px, solid, #f0f0f0;
+    
+}
+td,th{
+    width: 12%;
 }
 
+/*
 table tr:nth-child(even){
     background-color: #f2f2f2;
 }
-
+*/
 table tr:hover{
     background-color:#2E8BC0
 }
@@ -167,6 +182,8 @@ table th{
     margin-bottom: 10px;
 
 }
+
+
 #login{
     display: inline;
     

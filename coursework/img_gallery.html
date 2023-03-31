@@ -37,35 +37,35 @@
                 <div class="row">
                     
                             <div class="col-sm">
-                                <img src ="images/Ranks.jpg" class="gallery-img" alt="This is the ranks that u can achieve"/>
+                                <img id="img1" src ="images/Ranks.jpg" class="gallery-img" alt="This is the ranks that u can achieve"/>
                             </div>
                             <div class="col-sm">
-                                <img src ="images/summonersRift.jpg" class="gallery-img" alt="This is the map"/>
+                                <img id="img2" src ="images/summonersRift.jpg" class="gallery-img" alt="This is the map"/>
                             </div>
                             <div class="col-sm">
-                                <img src ="images/howlingAbyss.jpg" class="gallery-img" alt="This is an alternative map"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm">
-                                <img src ="images/championRoster.jpg" class="gallery-img" alt="All the playable champions"/>
-                            </div>
-                            <div class="col-sm">
-                                <img src ="images/store.jpg" class="gallery-img" alt="This is where you can spend all your hard earned money"/>
-                            </div>
-                            <div class="col-sm">
-                                <img src ="images/starGuard.jpg" class="gallery-img" alt="Star Guardian skins"/>
+                                <img id="img3" src ="images/howlingAbyss.jpg" class="gallery-img" alt="This is an alternative map"/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm">
-                                <img src ="images/SKT.jpg" class="gallery-img" alt="SKT T1 skins"/>
+                                <img id="img4" src ="images/championRoster.jpg" class="gallery-img" alt="All the playable champions"/>
                             </div>
                             <div class="col-sm">
-                                <img src ="images/EDG.jpg" class="gallery-img" alt="EDG skins"/>
+                                <img id="img5" src ="images/store.jpg" class="gallery-img" alt="This is where you can spend all your hard earned money"/>
                             </div>
                             <div class="col-sm">
-                                <img src ="images/Empyrean.jpg" class="gallery-img" alt="Empyrean skins"/>
+                                <img id="img6" src ="images/starGuard.jpg" class="gallery-img" alt="Star Guardian skins"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <img id="img7" src ="images/SKT.jpg" class="gallery-img" alt="SKT T1 skins"/>
+                            </div>
+                            <div class="col-sm">
+                                <img id="img8" src ="images/EDG.jpg" class="gallery-img" alt="EDG skins"/>
+                            </div>
+                            <div class="col-sm">
+                                <img id="img9" src ="images/Empyrean.jpg" class="gallery-img" alt="Empyrean skins"/>
                             </div>
                         </div>
                         
@@ -73,6 +73,96 @@
             
         </main>
 
+        <script>
+            document.getElementById("img1").addEventListener("mouseover", highlight);
+            document.getElementById("img1").addEventListener("mouseout", delight);
+
+            document.getElementById("img2").addEventListener("mouseover", highlight1);
+            document.getElementById("img2").addEventListener("mouseout", delight1);
+
+            document.getElementById("img3").addEventListener("mouseover", highlight2);
+            document.getElementById("img3").addEventListener("mouseout", delight2);
+
+            document.getElementById("img4").addEventListener("mouseover", highlight3);
+            document.getElementById("img4").addEventListener("mouseout", delight3);
+
+            document.getElementById("img5").addEventListener("mouseover", highlight4);
+            document.getElementById("img5").addEventListener("mouseout", delight4);
+
+            document.getElementById("img6").addEventListener("mouseover", highlight5);
+            document.getElementById("img6").addEventListener("mouseout", delight5);
+
+            document.getElementById("img7").addEventListener("mouseover", highlight6);
+            document.getElementById("img7").addEventListener("mouseout", delight6);
+
+            document.getElementById("img8").addEventListener("mouseover", highlight7);
+            document.getElementById("img8").addEventListener("mouseout", delight7);
+
+            document.getElementById("img9").addEventListener("mouseover", highlight8);
+            document.getElementById("img9").addEventListener("mouseout", delight8);
+        
+
+            function highlight() {
+            document.getElementById("img1").style="border: solid blue 5px;";
+            }
+            function highlight1() {
+            document.getElementById("img2").style="border: solid blue 5px;";
+            }
+            function highlight2() {
+            document.getElementById("img3").style="border: solid blue 5px;";
+            }
+            function highlight3() {
+            document.getElementById("img4").style="border: solid blue 5px;";
+            }
+            function highlight4() {
+            document.getElementById("img5").style="border: solid blue 5px;";
+            }
+            function highlight5() {
+            document.getElementById("img6").style="border: solid blue 5px;";
+            }
+            function highlight6() {
+            document.getElementById("img7").style="border: solid blue 5px;";
+            }
+            function highlight7() {
+            document.getElementById("img8").style="border: solid blue 5px;";
+            }
+            function highlight8() {
+            document.getElementById("img9").style="border: solid blue 5px;";
+            }
+
+
+            function delight() {
+            document.getElementById("img1").style="border: none;";
+            }
+            function delight1() {
+            document.getElementById("img2").style="border: none;";
+            }
+            function delight2() {
+            document.getElementById("img3").style="border: none;";
+            }
+            function delight3() {
+            document.getElementById("img4").style="border: none;";
+            }
+            function delight4() {
+            document.getElementById("img5").style="border: none;";
+            }
+            function delight5() {
+            document.getElementById("img6").style="border: none;";
+            }
+            function delight6() {
+            document.getElementById("img7").style="border: none;";
+            }
+            function delight7() {
+            document.getElementById("img8").style="border: none;";
+            }
+            function delight8() {
+            document.getElementById("img9").style="border: none;";
+            }
+
+        
+
+
+            </script>
 
 
 
