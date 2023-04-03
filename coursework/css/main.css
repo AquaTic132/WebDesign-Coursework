@@ -54,6 +54,10 @@ p{
     font-size: medium;
 }
 
+h5{
+    text-align: justify;
+}
+
 h6{
     font-size: small;
     color:#ffffff;
@@ -238,6 +242,37 @@ table th{
 }
 
 #videoclip{
-    width: 720px;
-    height:480px;
+    width: 900px;
+    height:500px;
+}
+
+.twitter-timeline{
+    width: 1280px;
+}
+
+.container1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#left-col{
+   width: 50%;
+}
+
+#right-col{
+    width: 50%;
+}
+
+.container2{
+    background-image: url(../images/background2.jpg);
+    background-size: 5000px;
+    border: solid black 2px;
+    margin-left: 20px;
+    margin-right: 1200px;
+}
+
+#mainBack{
+    background-image: url(../images/background4.jpg);
+    background-size: 3400px;
+    
 }
