@@ -13,7 +13,7 @@
         <header>
             <img id ="logo" src ="images/leagueIcon1.jpg" alt="Logo"/>
             <h1 id="title">
-                League Of Legends champions
+                Champion Catalouge
             </h1>
         </header>
 
@@ -38,7 +38,7 @@
 
             <script>
                 // Fetchs the champions from the Riot games API
-                fetch("https://ddragon.leagueoflegends.com/cdn/11.6.1/data/en_US/champion.json")
+                fetch("https://ddragon.leagueoflegends.com/cdn/13.7.1/data/en_US/champion.json")
                     .then(response => response.json())
                     .then(data => {
                         // Loops through the champions data and creates champion divs
@@ -71,7 +71,7 @@
 
 
         <footer>
-            <p>Copyright Keysan askari</p>
+            <p>Keysan askari 2023</p>
         </footer>
 
 
