@@ -32,42 +32,50 @@
 
         <!-- Contact form -->
         <main id="mainBack">
-            <div class="container2">
-                <form>
-                    <fieldset>
-                        <h2>Contact Us</h2>
-                        <legend>Contact us using the form below.</legend>
+            <div class="container1">
+                <div>
+                    <form class="container2">
+                        <fieldset>
+                            <h2>Contact Us</h2>
+                            <legend>Contact us using the form below.</legend>
 
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value=""/>
-                        <br/>
-                        <label for="last name">Last Name:</label>
-                        <input type="text" lastname="last name" value=""/>
-                        <br/>
-                        <label for="email">Email:</label>
-                        <input type="text" email="email" value=""/>
-                        <br/>
-                        <label for="membership">currently a Member?</label>
-                        <input type="radio" name="membership" value="Yes"/>
-                        <label for="membership">Yes</label>
-                        <input type="radio" name="membership" value="No"/>
-                        <label for="membership">No</label>
-                        <br/>
-                        <button type="button" id="button" onclick="send_form()">Submit </button>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" value=""/>
+                            <br/>
+                            <label for="last name">Last Name:</label>
+                            <input type="text" lastname="last name" value=""/>
+                            <br/>
+                            <label for="email">Email:</label>
+                            <input type="text" email="email" value=""/>
+                            <br/>
+                            <label for="membership">currently a Member?</label>
+                            <input type="radio" name="membership" value="Yes"/>
+                            <label for="membership">Yes</label>
+                            <input type="radio" name="membership" value="No"/>
+                            <label for="membership">No</label>
+                            <br/>
+                            <button type="button" id="button" onclick="send_form()">Submit </button>
 
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </div>
+            
+                <div id="right-col">
+                    <a class="twitter-timeline" href="https://twitter.com/LeagueOfLegends">Tweets by LeagueOfLegends</a>
+                </div>
             </div>
+
         </main>
-
-
-
-
 
 
     <footer>
         <p>Keysan askari 2023</p>
     </footer>
+
+
+    <script 
+        async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+    </script>
 
     <script>
         function send_form(){

@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-color: #ffffff;
+    background-color: #145DA0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
@@ -62,6 +62,11 @@ h6{
     font-size: small;
     color:#ffffff;
 }
+h7{
+    font-size:smaller;
+    color:gold;
+}
+
 
 main{
     background-color: #ffffff;
@@ -156,7 +161,7 @@ table th{
 }
 
 #leftRow{
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -268,7 +273,14 @@ table th{
     background-size: 5000px;
     border: solid black 2px;
     margin-left: 20px;
-    margin-right: 1200px;
+    margin-right: 300px;
+}
+.container3{
+    background-image: url(../images/background2.jpg);
+    background-size: 5000px;
+    border: solid black 2px;
+    margin-left: 20px;
+    margin-right: 1500px;
 }
 
 #mainBack{

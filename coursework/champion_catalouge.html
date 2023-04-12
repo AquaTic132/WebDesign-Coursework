@@ -62,6 +62,11 @@
                             title.textContent = champion.title;
                             champions.appendChild(title);
 
+                            // creates h7 element with the tags of the champion
+                            const tags = document.createElement("h7");
+                            tags.textContent = champion.tags;
+                            champions.appendChild(tags);
+
 
                             document.getElementById("champion-list").appendChild(champions);
                         });

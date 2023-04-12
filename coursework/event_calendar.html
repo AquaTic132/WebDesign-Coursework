@@ -76,11 +76,27 @@
 
                 </table>
             </div>
-            <form>
-                
 
+            <!-- form for users to submit an event -->
+            <p><br> &nbsp &nbsp Want to recommend an event? Tell us below!</p>
+
+            <div class="container3">
+            <form name="event">
+                <legend>Events</legend>
+
+                <label for="event_title">Event Title:</label>
+                <input type="text" placeholder="Event Title" name="event_title" value=""/>
+
+                <br>
+
+                <label for="event_date">Event Date:</label>
+                <input type="text" placeholder="Event Date" name="event_date" value=""/>
+
+                <br>
+
+                <button type="button" id="button" onclick="submit_event()">Submit Event </button>
             </form>
-
+            </div>
         </main>
 
         
@@ -88,6 +104,24 @@
             <p>Keysan askari 2023</p>
         </footer>
 
+        <!-- script to have a small validation function -->
+        <script>
+            function submit_event() {
+                var title = document.forms["event"]["event_title"].value;
+                var date = document.forms["event"]["event_date"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+                    }
+                else {
+                if (date.length == 0) {
+                    alert("An event must have a date!");
+                }
+                else {
+                    alert("Event submitted! The society will contact you soon!");
+                }
+                }
+            }
+        </script>
 
 
     </body>
